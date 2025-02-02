@@ -1,0 +1,133 @@
+Player(name="Dovahkiin", weapon=Sword())
+Enemy(name="Gimli", weapon=Axe(), race=Race.DWARF)
+Enemy(name="Legolas", weapon=Bow(), race=Race.ELF)
+Enemy(name="Garrosh", weapon=Sword(), race=Race.ORC)
+Enemy(name="Thokk", weapon=Axe(), race=Race.TROLL)
+
+[player] Dovahkiin(HP=100, alive=True, weapon=Sword(range=short, damage=25, num_uses=5))
+[dwarf] Gimli(HP=100, alive=True, weapon=Axe(range=short, damage=40, num_uses=3))
+[elf] Legolas(HP=100, alive=True, weapon=Bow(range=long, damage=15, num_uses=10))
+[orc] Garrosh(HP=100, alive=True, weapon=Sword(range=short, damage=25, num_uses=5))
+[troll] Thokk(HP=100, alive=True, weapon=Axe(range=short, damage=40, num_uses=3))
+
+–––––––––– Player attacks enemies ––––––––––
+
+Dovahkiin attacks Gimli with Sword
+Swish!
+Slash!
+Gimli received 25 points of damage -> Gimli HP=75
+
+Dovahkiin attacks Legolas with Sword
+Swish!
+Slash!
+Legolas received 25 points of damage -> Legolas HP=75
+
+Dovahkiin attacks Garrosh with Sword
+Swish!
+Slash!
+Garrosh received 25 points of damage -> Garrosh HP=75
+
+Dovahkiin attacks Thokk with Sword
+Swish!
+Slash!
+Thokk received 25 points of damage -> Thokk HP=75
+
+–––––––––– Some enemies attack player ––––––––––
+
+Gimli attacks Dovahkiin with Axe
+Chop!
+Dovahkiin received 40 points of damage -> Dovahkiin HP=60
+
+Legolas attacks Dovahkiin with Bow
+Creak...
+Twang!
+Thud!
+Dovahkiin received 15 points of damage -> Dovahkiin HP=45
+
+–––––––––– Enemies attack each other ––––––––––
+
+Legolas attacks Gimli with Bow
+Creak...
+Twang!
+Thud!
+Gimli received 15 points of damage -> Gimli HP=60
+
+Legolas attacks Gimli with Bow
+Creak...
+Twang!
+Thud!
+Gimli received 15 points of damage -> Gimli HP=45
+
+Gimli attacks Legolas with Axe
+Chop!
+Legolas received 40 points of damage -> Legolas HP=35
+
+Garrosh attacks Thokk with Sword
+Swish!
+Slash!
+Thokk received 25 points of damage -> Thokk HP=50
+
+Thokk attacks Garrosh with Axe
+Chop!
+Garrosh received 40 points of damage -> Garrosh HP=35
+
+–––––––––– The dwarf dies ––––––––––
+
+Is the dwarf Gimli still alive? True
+
+Dovahkiin attacks Gimli with Sword
+Swish!
+Slash!
+Gimli received 25 points of damage -> Gimli HP=20
+Sword broke! It has no more uses.
+
+Dovahkiin attacks Gimli with Sword
+Sword is broken! Cannot attack.
+
+Garrosh attacks Gimli with Sword
+Swish!
+Slash!
+Gimli received 25 points of damage -> Gimli HP=0
+Gimli has died!
+
+Is the dwarf Gimli still alive? False
+
+Gimli is dead! Cannot attack.
+
+–––––––––– Elf and orc trigger a mine and die ––––––––––
+
+The orc and elf encountered a mine, triggering a powerful explosion!
+
+Legolas received 50 points of damage -> Legolas HP=0
+Legolas has died!
+Garrosh received 50 points of damage -> Garrosh HP=0
+Garrosh has died!
+
+Characters status:
+
+[player] Dovahkiin(HP=45, alive=True, weapon=Sword(range=short, damage=25, num_uses=0))
+[dwarf] Gimli(HP=0, alive=False, weapon=Axe(range=short, damage=40, num_uses=1))
+[elf] Legolas(HP=0, alive=False, weapon=Bow(range=long, damage=15, num_uses=7))
+[orc] Garrosh(HP=0, alive=False, weapon=Sword(range=short, damage=25, num_uses=3))
+[troll] Thokk(HP=50, alive=True, weapon=Axe(range=short, damage=40, num_uses=2))
+
+–––––––––– Final battle ––––––––––
+
+Dovahkiin and Thokk engage in a fierce battle!
+
+Dovahkiin attacks Thokk with Sword
+Sword is broken! Cannot attack.
+
+Thokk attacks Dovahkiin with Axe
+Chop!
+Dovahkiin received 40 points of damage -> Dovahkiin HP=5
+
+Dovahkiin surrenders and Thokk finishes him off!
+
+Thokk attacks Dovahkiin with Axe
+Chop!
+Dovahkiin received 40 points of damage -> Dovahkiin HP=0
+Dovahkiin has died!
+Axe broke! It has no more uses.
+
+Game over! Player lost the battle... :(

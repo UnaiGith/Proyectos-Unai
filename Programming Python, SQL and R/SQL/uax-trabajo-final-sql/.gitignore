@@ -1,0 +1,15 @@
+## Mac files ##
+.DS_Store
+
+## Log files ##
+*.log
+
+## IDEA files ##
+*.idea
+
+## VS Code files ##
+.vscode
+
+## Database files ##
+database/data/*
+!database/data/.gitkeep

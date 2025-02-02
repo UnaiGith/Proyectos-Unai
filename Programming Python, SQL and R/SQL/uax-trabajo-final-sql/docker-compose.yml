@@ -1,0 +1,41 @@
+services:
+  sqlite:
+    # https://www.sqlite.org/
+    # https://github.com/KEINOS/Dockerfile_of_SQLite3.git
+    container_name: my-sqlite-container
+    image: keinos/sqlite3:3.47.0
+    command: sh scripts/initialize-database.sh
+    environment:
+      - RECREATE_DATABASE_WITH_INITIAL_TEST_DATA=${RECREATE_DATABASE_WITH_INITIAL_TEST_DATA:-true}
+    volumes:
+      # Mount the /database folder of the repository to the /database folder in the container
+      # This makes initialization scripts available to the container and allows the database data
+      # to persist even if the container is removed.
+      - ./database:/database
+    working_dir: /database
+
+  sqlitebrowser:
+    # https://sqlitebrowser.org/
+    # https://docs.linuxserver.io/images/docker-sqlitebrowser/#usage
+    image: linuxserver/sqlitebrowser:3.12.2
+    container_name: sqlitebrowser
+    # For Docker Engine only, many modern gui apps need this to function on older hosts as syscalls are unknown to Docker
+    security_opt:
+      - seccomp:unconfined #optional
+    environment:
+      - PUID=1000 # for UserID
+      - PGID=1000 # for GroupID
+      - TZ=Etc/UTC # timezone to use
+    volumes:
+      # Share the volume where the database data file is stored with the sqlitebrowser container
+      # in order to easily connect sqlitebrowser to the sqlite database.
+      # SQLite stores all the database info in a single file, so this is all that is needed.
+      # There is no need to establish a network connection between the two containers.
+      # /config is the user home directory in the sqlitebrowser container, so it's the folder
+      # that is opened by default in the GUI, making it easy to open the database.
+      - ./database/data:/config
+    working_dir: /config
+    ports:
+      # <external>:<internal>
+      - 3000:3000 # Sqlitebrowser desktop gui
+    restart: unless-stopped
