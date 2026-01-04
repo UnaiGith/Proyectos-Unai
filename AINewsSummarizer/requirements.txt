@@ -1,0 +1,15 @@
+requests
+newspaper3k
+sentence-transformers
+scikit-learn
+transformers
+torch
+faiss-cpu
+langchain
+chromadb
+reportlab
+fastapi
+streamlit
+uvicorn
+pandas
+numpy
