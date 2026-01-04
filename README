@@ -1,2 +1,64 @@
+ 🚀
+
+¡Hola! Soy Unai, **Físico e Ingeniero de AI**. Mi enfoque profesional se centra en la intersección entre el rigor analítico de la física y la potencia de los modelos de Inteligencia Artificial de vanguardia.
+
+Como Ingeniero de IA Generativa en TOLVIA, me especializo en el diseño y optimización de soluciones conversacionales avanzadas utilizando modelos LLM y SLM. Cuento con experiencia práctica integrando módulos de transcripción (STT) y síntesis de voz (TTS), así como en el desarrollo de arquitecturas RAG y flujos de trabajo complejos mediante APIs de vanguardia como Groq, Deepgram y OpenAI. Mi enfoque combina el desarrollo backend y frontend para crear agentes de IA equilibrados, eficientes y orientados a la mejora continua del cliente.
+
+---
+
+## 🎓 Proyectos Destacados
+
+### 1. AI News Summarizer (RAG System) 📰
+Sistema avanzado de síntesis de noticias utilizando arquitecturas de Generación Aumentada por Recuperación (RAG).
+* **Stack:** Python, FastAPI, LangChain, FAISS, OpenRouter (LLMs).
+* **Hito:** Optimización de la relevancia mediante búsqueda semántica y filtrado de redundancia informativa.
+
+### 2. TFM: F1 Predictive Analysis 🏎️
+Análisis y predicción de estrategias de carrera en Fórmula 1 mediante modelos de Machine Learning.
+* **Stack:** XGBoost, Scikit-learn, Pandas, Streamlit.
+* **Hito:** Gestión de Big Data (Git LFS) y despliegue de una interfaz interactiva para la predicción de paradas en boxes (pit-stops).
+
+### 3. TFG: [Título de tu Trabajo de Fin de Grado] 🔬
+Estudio y modelización técnica desarrollado para la culminación del Grado en Física.
+* **Enfoque:** Aplicación de métodos matemáticos y computacionales para la resolución de problemas físicos complejos.
+* **Hito:** Implementación de simulaciones/análisis de datos con rigor científico, aplicando principios de [Mecánica/Termodinámica/Cuántica - *puedes editar este campo*].
+
+---
+
+## 🧠 Especialización en Deep Learning & Máster
+Colección de desarrollos técnicos y laboratorios avanzados:
+* **Redes Neuronales desde cero:** Diseño de arquitecturas CNN, RNN y LSTMs personalizadas para visión artificial y series temporales.
+* **NLP & Transformers:** Tareas de traducción, análisis de sentimiento y fine-tuning de modelos de lenguaje.
+* **Aprendizaje por Refuerzo:** Entrenamiento de agentes en entornos de OpenAI Gym.
+* **Optimización Heurística:** Algoritmos genéticos y búsqueda local para problemas combinatorios.
+
+---
+
+## 🛠️ Stack Técnico
+* **Lenguajes:** Python (Experto), SQL, C++, R.
+* **IA/ML:** PyTorch, TensorFlow, Scikit-learn, LangChain, Vector DBs.
+* **Herramientas:** Git LFS, Docker, Streamlit, Linux.
+* **Intereses:** Quantum Machine Learning & Optimización Avanzada.
+
+---
+## 🧠 Especialización en Deep Learning & Máster | Deep Learning & Master's Specialization
+
+Colección de desarrollos técnicos y laboratorios avanzados / *Collection of technical developments and advanced labs*:
+
+* **Redes Neuronales desde cero | Neural Networks from Scratch:** Diseño de arquitecturas CNN, RNN y LSTMs personalizadas para visión artificial y series temporales. / *Design of custom CNN, RNN, and LSTM architectures for computer vision and time series.*
+* **NLP & Transformers:** Tareas de traducción, análisis de sentimiento y fine-tuning de modelos de lenguaje. / *Translation tasks, sentiment analysis, and language model fine-tuning.*
+* **Aprendizaje por Refuerzo | Reinforcement Learning:** Entrenamiento de agentes en entornos de OpenAI Gym. / *Agent training in OpenAI Gym environments.*
+* **Optimización Heurística | Heuristic Optimization:** Algoritmos genéticos y búsqueda local para problemas combinatorios. / *Genetic algorithms and local search for combinatorial problems.*
+
+
+---
+
+## 📫 Contacto
+¿Te interesa mi perfil? Puedes encontrarme en:
+* **LinkedIn:** [Enlace a tu perfil]
+* **Email:** [Tu correo electrónico]
+
+
+
 Copyright (c) [2025] [Unai Garrido Ramírez]. All rights reserved.
 Unauthorized copying, reproduction, or distribution of this project is prohibited.
